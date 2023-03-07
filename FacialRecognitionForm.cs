@@ -150,7 +150,7 @@ namespace FacialRecognitionApp
                     EigenObjectRecognizer recognizer = new EigenObjectRecognizer(trainingImages.ToArray(), labels.ToArray(), 4000, ref termCriterias);
                     name = recognizer.Recognize(result);
 
-                    SqlConnection con2 = new SqlConnection("Data Source = awehserverst10091865.database.windows.net; Initial Catalog = FacialRecognitionApp; User ID = jimmy; Password=4731598819Amo");
+                   // SqlConnection con2 = new SqlConnection("Data Source = awehserverst10091865.database.windows.net; Initial Catalog = FacialRecognitionApp; User ID = jimmy; Password=");
                     con2.Open();
                     //Create getters and setters for og usertxt inorder for not null
 
